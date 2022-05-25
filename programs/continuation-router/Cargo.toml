@@ -17,7 +17,7 @@ name = "continuation_router"
 no-entrypoint = []
 no-idl = []
 cpi = ["no-entrypoint"]
-default = []
+default = ["cpi"]
 
 [dependencies]
 anchor-lang = ">=0.22"

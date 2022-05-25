@@ -178,6 +178,32 @@ pub mod continuation_router {
     ) -> Result<()> {
         process_action!(ctx)
     }
+
+    pub fn __dummy_swap_token<'info>(
+        ctx: Context<'_, '_, '_, 'info, SwapToken<'info>>,
+    ) -> Result<()> {
+        Ok(())
+    }
+
+    pub fn __dummy_swap_output<'info>(
+        ctx: Context<'_, '_, '_, 'info, SwapOutput<'info>>,
+    ) -> Result<()> {
+        Ok(())
+    }
+
+    pub fn __dummy_ss_swap<'info>(
+        ctx: Context<'_, '_, '_, 'info, SSSwap<'info>>,
+    ) -> Result<()> {
+        Ok(())
+    }
+
+    pub fn __dummy_stable_swap<'info>(
+        ctx: Context<'_, '_, '_, 'info, StableSwap<'info>>,
+    ) -> Result<()> {
+        Ok(())
+    }
+
+
 }
 
 // --------------------------------
